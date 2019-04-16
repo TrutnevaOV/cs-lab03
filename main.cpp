@@ -141,15 +141,21 @@ main()
     cin >> number_count;
     cerr << "Enter numbers: ";
     const auto numbers = input_numbers(number_count);
-    size_t bin_count;
-    cerr << "Enter column count: ";
-    cin >> bin_count;
+    if (numbers.size()==0)
+    {
+        cerr<<"Massiv ne soderzhit elementov";
+    }
+    else
+    {
+        size_t bin_count;
+        cerr << "Enter column count: ";
+        cin >> bin_count;
 
-    // Расчет количества чисел в столбцах гистограммы
-    const auto bins = make_histogram(numbers, bin_count);
+        // Расчет количества чисел в столбцах гистограммы
+        const auto bins = make_histogram(numbers, bin_count);
 
-    // Отображение гистограммы
-    show_histogram_svg(bins);
-
+        // Отображение гистограммы
+        show_histogram_svg(bins);
+    }
     return 0;
 }
