@@ -7,7 +7,12 @@
 1555287852 c:\users\user\desktop\lab03\project\histogram.h
 	<vector>
 
-1555364063 source:c:\users\user\desktop\lab03\project\histogram.cpp
+1555378142 source:c:\users\user\desktop\lab03\project\histogram.cpp
 	"histogram.h"
 	<vector>
+
+1555378189 source:c:\users\user\desktop\lab03\project\svg.cpp
+	"histogram.h"
+	<vector>
+	<iostream>
 
